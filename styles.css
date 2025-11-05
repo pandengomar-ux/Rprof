@@ -1,0 +1,104 @@
+
+:root{
+  --orange:#ff7a1a;
+  --dark:#0f1720;
+  --muted:#6b7280;
+  --card-radius:18px;
+  --max-width:1100px;
+}
+*{box-sizing:border-box}
+body{
+  font-family: 'Inter', system-ui, Arial, sans-serif;
+  margin:0;
+  color:var(--dark);
+  background:#fff;
+  line-height:1.5;
+}
+.site-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 24px;
+  border-bottom:1px solid #f3f4f6;
+}
+.brand{display:flex;align-items:center;gap:12px}
+.badge{
+  background:var(--orange);
+  color:#fff;
+  padding:6px 10px;
+  border-radius:8px;
+  font-weight:700;
+}
+.logo{font-size:20px;margin:0;color:var(--dark);font-weight:800}
+.lang-btn{
+  border:1px solid #e6e7e8;
+  padding:8px 12px;
+  border-radius:10px;
+  background:#fff;
+}
+
+main{max-width:var(--max-width);margin:28px auto;padding:0 18px}
+
+/* Hero */
+.hero{display:flex;gap:30px;align-items:center;justify-content:space-between}
+.hero-inner{flex:1;min-width:280px}
+h2{font-size:46px;margin:0 0 12px;color:var(--dark);line-height:1.05}
+.muted{display:block;font-size:20px;color:var(--muted);font-weight:600}
+.lead{font-size:18px;color:var(--muted);margin:12px 0 18px}
+
+.cta-row{display:flex;gap:12px;margin-bottom:14px}
+.btn{display:inline-block;padding:12px 18px;border-radius:14px;text-decoration:none;font-weight:700}
+.btn.primary{background:var(--orange);color:white}
+.btn.ghost{border:1px solid #eaeaea;background:white;color:var(--orange)}
+
+.hero-highlights{display:flex;gap:10px;margin-top:12px}
+.tile{padding:12px 18px;border-radius:12px;background:#fff;box-shadow:0 8px 20px rgba(255,122,26,0.06);font-weight:600;color:var(--muted)}
+
+/* Sections */
+.section{padding:36px 0}
+.section.white{background:linear-gradient(90deg,rgba(255,245,238,0.6), #fff)}
+.section-title{font-size:32px;margin:0 0 8px;color:var(--dark)}
+.section-sub{color:var(--muted);margin-bottom:18px}
+
+/* Grid */
+.grid-4{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+.card{background:white;border-radius:14px;padding:22px;box-shadow:0 8px 20px rgba(15,23,32,0.04);font-weight:700}
+.card-sub{display:block;margin-top:12px;font-weight:400;color:var(--muted)}
+
+.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.service-card{background:white;padding:20px;border-radius:14px;box-shadow:0 8px 20px rgba(15,23,32,0.04)}
+.price-card{background:white;padding:20px;border-radius:14px;box-shadow:0 8px 20px rgba(15,23,32,0.04);text-align:center}
+.price{font-size:34px;font-weight:800;margin:8px 0}
+.price-info{padding:18px;font-weight:600;color:var(--muted);border-radius:12px}
+
+/* Pourquoi cards (text only) */
+.pourquoi-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.why-card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 12px 30px rgba(15,23,32,0.06)}
+.why-card h4{font-size:20px;margin:0 0 8px}
+.why-card p{color:var(--muted);margin:0}
+
+/* Recherche content */
+.content-block{background:white;padding:18px;border-radius:12px;box-shadow:0 8px 20px rgba(15,23,32,0.04)}
+
+/* Bio */
+.bio-row{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.bio-photo{width:220px;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,0.12)}
+.bio-text{flex:1}
+
+/* Reservation */
+.reservation .contact-lines a{color:var(--orange);text-decoration:none;font-weight:700}
+
+/* Footer */
+.site-footer{background:#0b0b0b;color:#fff;padding:28px 18px;margin-top:30px}
+.footer-inner{max-width:var(--max-width);margin:0 auto;display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start;justify-content:space-between}
+.footer-links ul{list-style:none;padding:0;margin:0}
+.footer-links a{color:#ddd;text-decoration:none}
+.footer-contact p{margin:6px 0}
+.copyright{max-width:var(--max-width);margin:18px auto 0;padding:8px;color:#888;text-align:center;font-size:14px}
+
+/* Responsive */
+@media (max-width:900px){
+  h2{font-size:32px}
+  .hero{flex-direction:column;align-items:flex-start}
+  .bio-row{flex-direction:column}
+}

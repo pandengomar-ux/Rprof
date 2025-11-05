@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meilleur Prof</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="badge">MeilleurProf</span>
+      <h1 class="logo">Meilleur Prof</h1>
+    </div>
+    <button id="langToggle" class="lang-btn" aria-label="Switch language">EN</button>
+  </header>
+
+  <main>
+    <!-- Hero / Accueil -->
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+        <h2 data-i18n="hero_title">Connectez-vous à la culture africaine <span class="muted">avec des experts et linguistes</span></h2>
+        <p class="lead" data-i18n="hero_lead">Lingala, Kituba, Munukutuba, Laari, Mbochi, Téké — Cours particuliers, packs flexibles.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#tarifs" data-i18n="btn_reserver">Réserver un pack</a>
+          <a class="btn ghost" href="#contact" data-i18n="btn_essai">Essai gratuit</a>
+        </div>
+
+        <div class="hero-highlights">
+          <div class="tile" data-i18n="highlight1">Cours en ligne flexibles</div>
+          <div class="tile" data-i18n="highlight2">Packs flexibles</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Langues proposées -->
+    <section id="langues" class="section white">
+      <h2 class="section-title" data-i18n="langues_title">Langues proposées</h2>
+      <p class="section-sub" data-i18n="langues_sub">Choisis la langue que tu souhaites apprendre ou pour laquelle tu veux un accompagnement.</p>
+      <div class="grid-4">
+        <div class="card">Lingala<br><span class="card-sub">Conversation & vocabulaire pratique.</span></div>
+        <div class="card">Kituba / Munukutuba<br><span class="card-sub">Kikongo ya leta — administratif & pro.</span></div>
+        <div class="card">Laari<br><span class="card-sub">Cours sur mesure.</span></div>
+        <div class="card">Mbochi & Téké<br><span class="card-sub">Supports et pratique orale.</span></div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <h2 class="section-title" data-i18n="services_title">Services</h2>
+      <p class="section-sub" data-i18n="services_sub">Nous offrons des services adaptés pour entreprises et particuliers.</p>
+      <div class="grid-3">
+        <div class="service-card">
+          <h3 data-i18n="service_course">Cours particuliers</h3>
+          <p data-i18n="service_course_desc">Programme adapté à ton niveau.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tarifs -->
+    <section id="tarifs" class="section white">
+      <h2 class="section-title" data-i18n="tarifs_title">Tarifs simples</h2>
+      <p class="section-sub" data-i18n="tarifs_sub">Choisis un pack adapté — réservez directement depuis le formulaire.</p>
+      <div class="pricing">
+        <div class="price-card">
+          <h3 data-i18n="pack5">Pack 5 heures</h3>
+          <div class="price">75€</div>
+          <a class="btn primary small" href="#contact" data-i18n="reserver">Réserver</a>
+        </div>
+        <div class="price-card">
+          <h3 data-i18n="pack10">Pack 10 heures</h3>
+          <div class="price">150€</div>
+          <a class="btn primary small" href="#contact" data-i18n="reserver2">Réserver</a>
+        </div>
+        <aside class="price-info">
+          <ul>
+            <li data-i18n="hour_price">1 heure — 15€</li>
+            <li data-i18n="pack5_short">Pack 5h — 75€</li>
+            <li data-i18n="pack10_short">Pack 10h — 150€</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Pourquoi nous choisir -->
+    <section id="pourquoi" class="section">
+      <h2 class="section-title" data-i18n="pourquoi_title">Pourquoi nous choisir ?</h2>
+      <div class="grid-3 pourquoi-cards">
+        <div class="why-card">
+          <h4>📚 <span data-i18n="why1_title">Expertise Linguistique</span></h4>
+          <p data-i18n="why1_text">Des cours donnés par un chercheur passionné et spécialisé dans les langues africaines.</p>
+        </div>
+        <div class="why-card">
+          <h4>📖 <span data-i18n="why2_title">Méthode Scientifique</span></h4>
+          <p data-i18n="why2_text">Basée sur la recherche en linguistique appliquée et la pratique de terrain.</p>
+        </div>
+        <div class="why-card">
+          <h4>✈ <span data-i18n="why3_title">Culture & Voyage</span></h4>
+          <p data-i18n="why3_text">Découvrez les langues et les cultures africaines à travers des exemples réels et vivants.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recherche & Objectifs -->
+    <section id="recherche" class="section white">
+      <h2 class="section-title" data-i18n="recherche_title">Recherche & Objectifs</h2>
+      <div class="content-block">
+        <p data-i18n="recherche_p1">Raphaël Otho travaille sur le Laari, langue fille du Kikoongo, parlée dans le département du Pool en République du Congo. Il s'intéresse particulièrement aux verbes de mouvement et de déplacement, essentiels pour décrire nos actions quotidiennes.</p>
+        <p data-i18n="recherche_p2">Son objectif : comprendre comment ces verbes fonctionnent, les classer en catégories et tester une nouvelle théorie linguistique. Pour cela, il se rend régulièrement au Congo pour discuter avec les locuteurs natifs, enregistrer leurs paroles et observer leur usage des verbes.</p>
+        <ul>
+          <li data-i18n="recherche_li1">Verbes de mouvement sur place (ex. zakalá = « s'asseoir »)</li>
+          <li data-i18n="recherche_li2">Verbes de déplacement (ex. katuká = « quitter »)</li>
+          <li data-i18n="recherche_li3">Verbes de déplacement d'objet (ex. boongá = « prendre »)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Raphaël Otho (no "Biographie" word) -->
+    <section id="raphael" class="section">
+      <h2 class="section-title">Raphaël Otho</h2>
+      <div class="bio-row">
+        <img class="bio-photo" src="cours.jpg" alt="Raphaël Otho">
+        <div class="bio-text">
+          <p data-i18n="bio_p1">Apprentissage des langues africaines avec Raphaël Otho. Raphaël est chercheur en linguistique, spécialisé dans les langues du Congo. Il combine recherche de terrain et enseignement pour créer des cours adaptés et rigoureux.</p>
+          <p data-i18n="bio_p2">Contact direct disponible dans le footer.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Réservation before footer -->
+    <section id="reservation" class="section white reservation">
+      <h2 class="section-title" data-i18n="res_title">Réservation</h2>
+      <div class="content-block">
+        <p data-i18n="res_text">Pour faire votre réservation, contactez :</p>
+        <p class="contact-lines">📱 <a href="tel:+33758686019">+33 7 58 68 60 19</a><br>✉️ <a href="mailto:othoraphael@gmail.com">othoraphael@gmail.com</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="site-footer">
+    <div class="footer-inner">
+      <h3>Meilleur Prof</h3>
+      <p data-i18n="footer_desc">Apprentissage des langues africaines avec Raphaël Otho.</p>
+
+      <div class="footer-links">
+        <h4>Liens utiles</h4>
+        <ul>
+          <li><a href="#about" data-i18n="link_about">À propos</a></li>
+          <li><a href="#langues" data-i18n="link_langues">Langues</a></li>
+          <li><a href="#tarifs" data-i18n="link_tarifs">Tarifs</a></li>
+          <li><a href="#contact" data-i18n="link_contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4 data-i18n="contact_title">Contact</h4>
+        <p>République du Congo / Paris</p>
+        <p>+33 7 58 68 60 19</p>
+        <p><a href="mailto:othoraphael@gmail.com">othoraphael@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div class="copyright">© 2025 Meilleur Prof — Tous droits réservés</div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="i18n.js"></script>
+</body>
+</html>
